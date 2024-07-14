@@ -18,7 +18,7 @@ RUN mkdir -p \
   /usr/share/caddy
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
-COPY examples/simple.caddyfile /etc/caddy/Caddyfile
+COPY examples/transport.caddyfile /etc/caddy/Caddyfile
 
 # See https://caddyserver.com/docs/conventions#file-locations for details
 ENV XDG_CONFIG_HOME /config
